@@ -46,11 +46,10 @@ app.delete('/api/notes/:id', (req, res) => {
         let deleteId = req.params['id'];
 
         obj = obj.filter(item => item.id != deleteId);
-        
+
         fs.writeFileSync('./db/db.json', JSON.stringify(obj));
         res.status(200).json({status:"ok"});
     });
 });
 
-app.listen(port, () => {
-})
+app.listen(port, () => console.log(`Listening on PORT: ${port}`));
