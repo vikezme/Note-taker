@@ -12,3 +12,7 @@ Path
 Need to install npm packages that aren't already included in node.
 
 The initial page will take you to a welcome/get started page, once you click into get started you can start creating your notes!
+
+Heroku link:-
+ https://notetaker77.herokuapp.com
+ 
