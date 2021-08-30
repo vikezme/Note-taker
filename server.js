@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 
 app.use(express.json());
 
-app.use('/assets', express.static('public/assets'))
+app.use( express.static('public'))
 
 app.get('/', (req, res) => {
     res.sendFile('./public/index.html', { root: __dirname });
